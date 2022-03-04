@@ -1,5 +1,78 @@
 <!DOCTYPE html>
 <html>
     <!--#include virtual="../common/document_head.html"-->
-    contact page
+    <head>
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <div>
+            <h1 style="text-align: center;">Contact Page</h1>
+        </div>
+        <!-- <blockquote> -->
+        <div class="row">
+            <h5>Contact Form:</h5>
+            <blockquote>
+                If you would like to get into contact with us, please fill out the contact form below. 
+            </blockquote>
+            <form class="col s12" onsubmit="contactFormValidate()">
+                <div class="row">
+                    <div class="input-field col s3">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Enter First Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s3">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Enter Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s3">
+                      <input id="phone_number" type="number" class="validate">
+                      <label for="phone_number">Enter Phone Number</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s3">
+                      <input id="email" type="text" class="validate">
+                      <label for="email">Enter Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s3">
+                            <select class="browser-default">
+                                <option value="" disabled selected>Choose Your Reason For Contacting</option>
+                                <option value="1">Business</option>
+                                <option value="2">Personal</option>
+                                <option value="3">Other</option>
+                            </select>
+                        <!-- <label>Select Reason For Contacting:</label>
+                        <select>
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Enter Message</label>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <button class="btn waves-effect waves-light" type="submit">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <button class="btn waves-effect waves-light" type="reset" name="action">Reset
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <!-- </blockquote> -->
+    </body>
 </html>

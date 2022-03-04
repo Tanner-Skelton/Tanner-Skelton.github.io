@@ -14,7 +14,8 @@
             <blockquote>
                 If you would like to get into contact with us, please fill out the contact form below. 
             </blockquote>
-            <form class="col s12" onsubmit="contactFormValidate()">
+            <script src="../js/contact.js"></script>
+            <form id="contactForm" class="col s12" onsubmit="contactFormValidate()">
                 <div class="row">
                     <div class="input-field col s3">
                         <input id="first_name" type="text" class="validate">
@@ -29,7 +30,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s3">
-                      <input id="phone_number" type="number" class="validate">
+                      <input id="phone_number" type="text">
                       <label for="phone_number">Enter Phone Number</label>
                     </div>
                 </div>
@@ -41,25 +42,18 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s3">
-                            <select class="browser-default">
+                            <select id="reason" class="browser-default">
                                 <option value="" disabled selected>Choose Your Reason For Contacting</option>
                                 <option value="1">Business</option>
                                 <option value="2">Personal</option>
                                 <option value="3">Other</option>
                             </select>
-                        <!-- <label>Select Reason For Contacting:</label>
-                        <select>
-                          <option value="" disabled selected>Choose your option</option>
-                          <option value="1">Option 1</option>
-                          <option value="2">Option 2</option>
-                          <option value="3">Option 3</option>
-                        </select> -->
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Enter Message</label>
+                        <textarea id="textarea" class="materialize-textarea"></textarea>
+                        <label for="textarea">Enter Message</label>
                       </div>
                 </div>
                 <div class="row">

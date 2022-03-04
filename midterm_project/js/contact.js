@@ -1,5 +1,4 @@
 function contactFormValidate() {
-  alert("Reached contactFormValidate method!");
   var alertText = "";
   var firstName = document.getElementById("first_name").value;
   alertText = alertText + "First Name: " + firstName + "\n";

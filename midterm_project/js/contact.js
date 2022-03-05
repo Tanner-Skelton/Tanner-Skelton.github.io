@@ -14,23 +14,31 @@ function contactFormValidate() {
   var message = document.getElementById("textarea").value;
   alertText = alertText + "Your Message: " + message + "\n";
 
+  var errorText = "";
   var everythingOk = true;
+  var isEmailValid = true;
+  var isPhoneValid = true;
 
   if (validateEmail(email)) {
-    everythingOk = true;
+    isEmailValid = true;
   } else {
-    everythingOk = false;
-    alertText = "Email is invalid!\n";
+    isEmailValid = false;
+    errorText = errorText + "Email is invalid!\n";
   }
 
   if (validatePhone(phone)) {
-    everythingOk = true;
+    isPhoneValid = true;
   } else {
-    everythingOk = false;
-    alertText = "Phone is invalid!\n";
+    isPhoneValid = false;
+    errorText = errorText + "Phone is invalid!\n";
   }
 
-  displayMessage(alertText, everythingOk);
+  everythingOk = isPhoneValid && isEmailValid;
+  if (everythingOk) {
+    displayMessage(alertText, everythingOk);
+  } else {
+    displayMessage(errorText, everythingOk);
+  }
 }
 
 function validateEmail(email) {
@@ -52,12 +60,13 @@ function validatePhone(number) {
 }
 
 function displayMessage(text, everythingOK) {
+  console.log(everythingOK);
   if (everythingOK) {
     var textToDisplay =
       "Form Successfully Submitted, Thank You!\nBelow is a recap of your details:\n" +
       text;
     alert(textToDisplay);
   } else {
-    alert(text);
+    alert(text + "Please fill out the form again!\n");
   }
 }

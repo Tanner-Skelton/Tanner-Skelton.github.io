@@ -4,59 +4,43 @@
     <div class="container">
       <!--Container for top of page-->
       <h1>Welcome to our site for csce464</h1>
+      <p1>You can see what we look like by clicking on our pictures.</p1>
     </div>
   </div>
 
 
   <div class="container">
-    <div class="section">
-
-      <!--   Icon Section - row with col's set up incase we want to use  -->
+    <script src="../js/index.js"></script>
+    <div class="section" id="mouse_effect">
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          <div class="col s6 m4">
+            <div class="card">
+              <div class="card-image" id="card">
+                <img id="tanner_img" src="../pictures/tanner_side.PNG" onmousedown="mouseOverTanner()">
+                <span class="card-title">Tanner</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+          <div class="col s6 m4">
+            <div class="card">
+              <div class="card-image" id="card">
+                <img id="tanner_img" src="../pictures/tanner_side.PNG" onmousedown="mouseOverTanner()">
+                <span class="card-title">Tanner</span>
+              </div>
+            </div>
+          </div>
+          <div class="col s6 m4">
+            <div class="card">
+              <div class="card-image" id="card">
+                <img id="tanner_img" src="../pictures/tanner_side.PNG" onmousedown="mouseOverTanner()">
+                <span class="card-title">Tanner</span>
+              </div>
+            </div>
+          </div>
 
     </div>
     <br><br>
   </div>
-
-  <!-- This is the beginning of the footer-->
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support 
-            and continue development on this project and is greatly appreciated.
-          </p>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made using <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
+  <!--#include virtual="../common/footer.html"-->
   </body>
 </html>

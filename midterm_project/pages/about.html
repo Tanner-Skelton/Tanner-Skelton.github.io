@@ -1,30 +1,72 @@
 <!--#include virtual="../common/document_head.html"-->
-<body>
-    <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
+    <head>
+      <title>About Page</title>
+      <script src="../js/about.js"></script>
+    </head>
+    <body onload="initialize_gallery()">
+  
+        <div class="section no-pad-bot" id="index-banner">
+          <div class="container">
             <!--Container for top of page-->
-            <h1>TEST</h1>
+            <h1 style="text-align: center;">ABOUT US</h1>
+          </div>
         </div>
-    </div>
-
-
-    <div class="container">
-        <div class="section">
-
-            <!--   Icon Section - row with col's set up incase we want to use  -->
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
-
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                            incorporate our custom components. Additionally, we refined animations and transitions to
-                            provide a smoother experience for developers.</p>
-                    </div>
+      
+      
+        <div class="container">
+          <div class="section">
+              <div class="row">
+                <div class="col s12 m2 l2">
+                  <button class="btn-floating btn-large waves-effect waves-light" onclick="gallery_previous()">PREV</button>
                 </div>
-            </div>
+                <div class="col s12 m8 l8"><img id="about_gallery" class="responsive-img" src=""> </div>
+                <div class="col s12 m2 l2">
+                  <button class="btn-floating btn-large waves-effect waves-light" onclick="gallery_next()">
+                    NEXT
+                  </button>
+              </div>
+                
+              </div>
+              <div class = "row">
+                <div class="col s12 m12 l12">
+                  <h4 id="name" style="text-align: center;"></h4>
+                </div>
+              </div>
+              <div class="divider">
 
+              </div>
+              <div class="row">
+                <div class="col s12 m4 l4" style="text-align: center;"> Major</div>
+                <div class="col s12 m4 l4" style="text-align: center;"> Grade</div>
+                <div class="col s12 m4 l4" style="text-align: center;"> Expected Graduation</div>
+              </div>
+
+              <div class="row">
+                <div class="col s12 m4 l4" style="text-align: center;"> <h5 id="major">Placeholder</h5></div>
+                <div class="col s12 m4 l4" style="text-align: center;"> <h5 id="grade">Placeholder</h5></div>
+                <div class="col s12 m4 l4" style="text-align: center;"> <h5 id="graduation">Placeholder</h5></div>
+              </div>
+              <div class="divider">
+
+              </div>
+
+              <div class="row">
+                <div class="col l6 offset-l3 m6 offset-m3" style="text-align: center;">Post Grad Plans</div>
+                <div class="col l6 offset-l3 m6 offset-m3" style="text-align: center;"><h6 id="plans">placeholder</h6></div>
+              </div> 
+              <div class="divider">
+
+              </div>
+
+              <div class="row">
+                <div class="col l6 offset-l3 m6 offset-m3" style="text-align: center;">Hobbies</div>
+                <div class="col l6 offset-l3 m6 offset-m3" style="text-align: center;"><h6 id="hobbies">placeholder</h6></div>
+              </div>
+
+
+      
+          </div>
+          <br><br>
         </div>
         <br><br>
     </div>

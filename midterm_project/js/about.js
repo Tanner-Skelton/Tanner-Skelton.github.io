@@ -39,10 +39,9 @@ usArray[0] = john;
 usArray[1] = tanner;
 usArray[2] = david;
 
-function initialize_gallery() {
-    imageCounter = 0;
+function set_gallery(index) {
     var imageObject = document.getElementById('about_gallery');
-    imageObject.src = imageArray[imageCounter];
+    imageObject.src = imageArray[index];
     var name = document.getElementById('name');
     var major = document.getElementById('major');
     var grade = document.getElementById('grade');
@@ -50,13 +49,18 @@ function initialize_gallery() {
     var plans = document.getElementById('plans');
     var hobbies = document.getElementById('hobbies');
 
-    name.textContent = usArray[imageCounter].name;
-    major.textContent = usArray[imageCounter].major;
-    grade.textContent = usArray[imageCounter].grade;
-    graduation.textContent = usArray[imageCounter].expectedGraduation;
+    name.textContent = usArray[index].name;
+    major.textContent = usArray[index].major;
+    grade.textContent = usArray[index].grade;
+    graduation.textContent = usArray[index].expectedGraduation;
 
-    plans.textContent = usArray[imageCounter].postGradPlans;
-    hobbies.textContent = usArray[imageCounter].hobbies;
+    plans.textContent = usArray[index].postGradPlans;
+    hobbies.textContent = usArray[index].hobbies;
+}
+
+function initialize_gallery() {
+    imageCounter = 0;
+    set_gallery(0);
   
 }
 
@@ -67,24 +71,7 @@ function gallery_next() {
     else {
         imageCounter ++;
     }
-    var imageObject = document.getElementById('about_gallery');
-    imageObject.src = imageArray[imageCounter];
-
-    var name = document.getElementById('name');
-    var major = document.getElementById('major');
-    var grade = document.getElementById('grade');
-    var graduation = document.getElementById('graduation');
-
-    var plans = document.getElementById('plans');
-    var hobbies = document.getElementById('hobbies');
-
-    name.textContent = usArray[imageCounter].name;
-    major.textContent = usArray[imageCounter].major;
-    grade.textContent = usArray[imageCounter].grade;
-    graduation.textContent = usArray[imageCounter].expectedGraduation;
-    
-    plans.textContent = usArray[imageCounter].postGradPlans;
-    hobbies.textContent = usArray[imageCounter].hobbies;
+    set_gallery(imageCounter);
 }
 
 function gallery_previous() {
@@ -94,22 +81,5 @@ function gallery_previous() {
     else {
         imageCounter --;
     }
-    var imageObject = document.getElementById('about_gallery');
-    imageObject.src = imageArray[imageCounter];
-
-    var name = document.getElementById('name');
-    var major = document.getElementById('major');
-    var grade = document.getElementById('grade');
-    var graduation = document.getElementById('graduation');
-
-    var plans = document.getElementById('plans');
-    var hobbies = document.getElementById('hobbies');
-
-    name.textContent = usArray[imageCounter].name;
-    major.textContent = usArray[imageCounter].major;
-    grade.textContent = usArray[imageCounter].grade;
-    graduation.textContent = usArray[imageCounter].expectedGraduation;
-    
-    plans.textContent = usArray[imageCounter].postGradPlans;
-    hobbies.textContent = usArray[imageCounter].hobbies;
+    set_gallery(imageCounter);
 }

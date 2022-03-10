@@ -22,8 +22,8 @@ const tanner = {
     "major": "Software Engineering",
     "grade": "Senior",
     "expectedGraduation": "May 2022",
-    "postGradPlans": "idk probably just ride my onewheel and game",
-    "hobbies": "I like to ride my onewheel and cosplay as spiderman"
+    "postGradPlans": "Working on developing Neural Nest on the side while working full time at Spreetail as a Software Developer.",
+    "hobbies": "I enjoy spending time with friends, photography, 3D modeling and going on adventures in the outdoors."
 
 };
 const david = {

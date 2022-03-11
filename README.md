@@ -3,6 +3,8 @@ Internet systems programming midterm project.
 
 Link: http://localhost:8888/csce464_midterm_project/midterm_project/pages/index.html
 
+public link: https://tanner-skelton.github.io/midterm_project/pages/index.html
+
 Pages:
     NAV BAR - route to any page from anywhere
     Home page - route to other subsquent pages

@@ -1,7 +1,6 @@
 <?php
 include("connectToDatabase.php");
 //session_start();
-echo "post: ".$_POST['registrationEmail'];
 if (emailAlreadyExists($db, $_POST['registrationEmail']))
 {
     echo "<h3>Sorry, but your e-mail

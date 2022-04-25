@@ -60,3 +60,7 @@ CREATE TABLE FilledOrders (
 		FOREIGN KEY (usersID) REFERENCES Users(usersID),
 		PRIMARY KEY (filledOrderID)
 );
+
+INSERT INTO Products (name, description, price, sku, inventory) VALUES ("pencil", "wooden writing utensil that utilizes graphite to write things, comes presharpened *sharpener not included*", 50.00, "23423lk2j23jl3", 10);
+
+INSERT INTO Products (name, description, price, sku, inventory) VALUES ("light-saber", "If you don't know what this is you probably should not be buying it", 1000.00, "23423luke230923", 10);

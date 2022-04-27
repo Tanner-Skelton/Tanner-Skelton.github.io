@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include("../common/document_head.html");
+include("../common/document_head.php");
 ?>
 <head>
     <script src="../js/loginFormValidate.js"></script>
@@ -12,7 +12,7 @@ include("../common/document_head.html");
     <form class="col s12" 
             id="loginForm"
             onsubmit="return loginFormValidate();"
-            action="loginFormProcess.php"
+            action="../scripts/loginFormProcess.php"
             method="post">
         <div class="row">
         <div class="input-field col s6">
@@ -20,7 +20,7 @@ include("../common/document_head.html");
           <label for="email">Email</label>
         </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="password" type="password" name="loginPassword" class="validate">
           <label for="password">Password</label>
         </div>

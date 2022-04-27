@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../common/document_head.html");
+include("../common/document_head.php");
 ?>
 <head>
     <script src="../js/registrationFormValidate.js"></script>
@@ -13,7 +13,7 @@ include("../common/document_head.html");
     <form class="col s12" 
             id="registrationForm"
             onsubmit="return registrationFormValidate();"
-            action="registerFormProcess.php"
+            action="../scripts/registerFormProcess.php"
             method="post">
       <div class="row">
         <div class="input-field col s6">

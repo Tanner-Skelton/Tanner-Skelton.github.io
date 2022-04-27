@@ -11,9 +11,11 @@ if ($numberOfRecords == 0) {
 if ($numberOfRecords > 0) {
     $row = mysqli_fetch_array($rowsWithMatchingEmail, MYSQLI_ASSOC);
     if ($_POST['loginPassword'] == $row['userPassword']) {
-        echo "Yay! You're logged in now as: ";
-        echo "".$row['firstName']."  ".$row['lastName'];
-        echo "<h3><a href='index.html'>Click here to go home</a></h3>";
+        $_SESSION['usersID'] = $row['usersID'];
+        $_SESSION['firstName'] = $row['firstName'];
+        $_SESSION['lastName'] = $row['lastName'];
+        $_SESSION['email'] = $row['email'];
+        header("Location:  ../pages/index.html");
     }
 }
 mysqli_close($db);

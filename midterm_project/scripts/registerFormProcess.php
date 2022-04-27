@@ -21,9 +21,7 @@ if (emailAlreadyExists($db, $_POST['registrationEmail']))
         '$_POST[registrationPassword]'
     );";
     $success = mysqli_query($db, $query);
-    echo "<h3>You are all set!</h3>";
-    echo "<h3>
-    <a href='loginForm.php'>click here to go back</a>.</h3>";
+    header("Location:  ../pages/loginForm.php");
 }
 mysqli_close($db);
 

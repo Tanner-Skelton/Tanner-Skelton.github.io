@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <!-- document_head.html -->
 <html lang="en">
@@ -20,17 +23,41 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="related_work.html">Related Work</a></li>
+                    <li><a href="shop.php">Shop</a><li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="registerForm.php">Register</a></li>
-                    <li><a href="loginForm.php">Login</a></li>
+                    <?php
+                        if (!isset($_SESSION['usersID'])) {
+                            echo "<li><a href='loginForm.php'>Login</a></li>";
+                        } else {
+                            echo "<li><a href='../scripts/logoutProcess.php'>Logout</a></li>";
+                        }
+                    ?>
+                    
                 </ul>
+                <ul class="right">
+                    <?php
+                        if (isset($_SESSION['usersID'])) {
+                            echo "<li>Welcome, $_SESSION[firstName]</li>";
+                        } else {
+                            echo "<li>Welcome</li>";
+                        }
+                    ?>
+                </ul> 
                 <ul id="nav-mobile" class="sidenav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="related_work.html">Related Work</a></li>
+                    <li><a href="shop.php">Shop</a><li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="registerForm.php">Register</a></li>
-                    <li><a href="loginForm.php">Login</a></li>
+                    <?php
+                        if (!isset($_SESSION['usersID'])) {
+                            echo "<li><a href='loginForm.php'>Login</a></li>";
+                        } else {
+                            echo "<li><a href='../scripts/logoutProcess.php'>Logout</a></li>";
+                        }
+                    ?>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>

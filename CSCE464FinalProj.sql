@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS Feedback, Bios, Users, Products, ShoppingCart, CartProduct, FilledOrders;
+DROP TABLE IF EXISTS Feedback, Bios, CartProduct, ShoppingCart, Products, FilledOrders, Users;
 
 CREATE TABLE Feedback (
 		feedbackID int NOT NULL AUTO_INCREMENT,

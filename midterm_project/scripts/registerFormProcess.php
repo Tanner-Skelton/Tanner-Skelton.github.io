@@ -6,7 +6,7 @@ if (emailAlreadyExists($db, $_POST['registrationEmail']))
     echo "<h3>Sorry, but your e-mail
           address is already registered.</h3>";
     echo "<h3>
-    <a href='registerForm.php'>click here to go back</a>.</h3>";
+    <a href='../pages/registerForm.php'>click here to go back</a>.</h3>";
 } else {
     $query = "INSERT INTO Users(
         firstName,

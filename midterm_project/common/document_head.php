@@ -38,6 +38,7 @@ session_start();
                 <ul class="right">
                     <?php
                         if (isset($_SESSION['usersID'])) {
+                            echo "<li><a href='../pages/shoppingCart.php'><i class='material-icons'>shopping_cart</i></a></li>";
                             echo "<li>Welcome, $_SESSION[firstName]</li>";
                         } else {
                             echo "<li>Welcome</li>";

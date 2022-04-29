@@ -33,7 +33,7 @@ CREATE TABLE Products (
 		price FLOAT,
 		sku VARCHAR(255),
 		inventory int,
-		picture BLOB, 
+		imagePath VARCHAR(255), 
 		PRIMARY KEY (productID)
 );
 
@@ -66,5 +66,5 @@ INSERT INTO Products (name, description, price, sku, inventory) VALUES ("pencil"
 
 INSERT INTO Products (name, description, price, sku, inventory) VALUES ("light-saber", "If you don't know what this is you probably should not be buying it", 1000.00, "23423luke230923", 10);
 
-INSERT INTO Products (name, description, price, sku, inventory, picture) VALUES ("force gum (mace windu mint)", "chewing gum that gives the chewer the force while the gum still has flavor", 4.99, "2erhd2j23jl3", 10, LOAD_FILE('/Applications/MAMP/htdocs/csce464_midterm_project/midterm_project/pictures/products/mace_windu_mint.png'));
+INSERT INTO Products (name, description, price, sku, inventory, imagePath) VALUES ("force gum (mace windu mint)", "chewing gum that gives the chewer the force while the gum still has flavor", 4.99, "2erhd2j23jl3", 10, "mace_windu_mint.png");
 

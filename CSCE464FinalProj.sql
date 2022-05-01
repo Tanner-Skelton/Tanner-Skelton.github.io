@@ -62,9 +62,9 @@ CREATE TABLE FilledOrders (
 		PRIMARY KEY (filledOrderID)
 );
 
-INSERT INTO Products (name, description, price, sku, inventory) VALUES ("pencil", "wooden writing utensil that utilizes graphite to write things, comes presharpened *sharpener not included*", 50.00, "23423lk2j23jl3", 10);
+INSERT INTO Products (name, description, price, sku, inventory, imagePath) VALUES ("pencil", "wooden writing utensil that utilizes graphite to write things, comes presharpened *sharpener not included*", 50.00, "23423lk2j23jl3", 10, "pencil.png");
 
-INSERT INTO Products (name, description, price, sku, inventory) VALUES ("light-saber", "If you don't know what this is you probably should not be buying it", 1000.00, "23423luke230923", 10);
+INSERT INTO Products (name, description, price, sku, inventory, imagePath) VALUES ("light-saber", "If you don't know what this is you probably should not be buying it", 1000.00, "23423luke230923", 10, "lightsaber.png");
 
 INSERT INTO Products (name, description, price, sku, inventory, imagePath) VALUES ("force gum (mace windu mint)", "chewing gum that gives the chewer the force while the gum still has flavor", 4.99, "2erhd2j23jl3", 10, "mace_windu_mint.png");
 

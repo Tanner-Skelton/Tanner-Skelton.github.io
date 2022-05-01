@@ -6,7 +6,7 @@ $rowsWithMatchingEmail = mysqli_query($db, $query);
 $numberOfRecords = mysqli_num_rows($rowsWithMatchingEmail);
 if ($numberOfRecords == 0) {
     echo "You are not in the system, go register here.";
-    echo "<h3><a href='registerForm.php'>click here</a></h3>";
+    echo "<h3><a href='../pages/registerForm.php'>click here</a></h3>";
 } 
 if ($numberOfRecords > 0) {
     $row = mysqli_fetch_array($rowsWithMatchingEmail, MYSQLI_ASSOC);

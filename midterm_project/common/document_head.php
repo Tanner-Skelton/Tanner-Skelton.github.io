@@ -22,7 +22,6 @@ session_start();
                 <ul class="left hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="related_work.html">Related Work</a></li>
                     <li><a href="shop.php">Shop</a><li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="registerForm.php">Register</a></li>
@@ -48,7 +47,6 @@ session_start();
                 <ul id="nav-mobile" class="sidenav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="related_work.html">Related Work</a></li>
                     <li><a href="shop.php">Shop</a><li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="registerForm.php">Register</a></li>

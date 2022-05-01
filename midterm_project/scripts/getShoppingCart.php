@@ -29,7 +29,7 @@ for($i=0; $i < $productCount; $i++ )
         echo number_format($row[price], 2);
         echo "</div>
         <div class=card-action>
-          <a href=../scripts/addToCart.php?productID=$row[productID] > <i class='material-icons'>add_shopping_cart</i></a>
+          <a href=../scripts/removeFromCart.php?productID=$row[productID]&cartProductID=$row[cartProductID] > <i class='material-icons'>clear</i></a>
         </div>
       </div>
     </div>

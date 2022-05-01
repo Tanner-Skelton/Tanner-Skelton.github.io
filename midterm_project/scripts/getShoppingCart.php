@@ -12,8 +12,8 @@ $totalPrice = 0;
 echo "<ul class=collection>";
 for($i=0; $i < $productCount; $i++ )
 {
-    $totalPrice += $row[price];
     $row = mysqli_fetch_array($products, MYSQLI_ASSOC);
+    $totalPrice += $row[price];
     echo "<li class=collection-item>
     <div class=card horizontal>";
     if(!is_null($row['imagePath']))
@@ -36,6 +36,18 @@ for($i=0; $i < $productCount; $i++ )
     </li>";
 }
 echo "</ul>";
+echo "<div class=card horizontal>
+  <div class=card-stacked>
+  <div class=card-content>
+    <p>Total Price:  ";
+    echo number_format($totalPrice, 2);
+    echo "</p>
+  </div>
+  <div class=card-action>
+    <a href=../pages/completedOrder.php?shoppingCartID=$row[cartID]>Complete Order</a>
+  </div>
+  </div>
+  </div> ";
 
 
 ?>

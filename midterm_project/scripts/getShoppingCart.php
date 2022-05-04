@@ -18,7 +18,7 @@ for($i=0; $i < $productCount; $i++ )
     <div class=card horizontal>";
     if(!is_null($row['imagePath']))
     {
-        echo "<div class=card-image>";
+        echo "<div class=card-image1 style=width : 10%>";
         echo "<img src='../pictures/products/$row[imagePath]'/>";
         echo "</div>";
     }

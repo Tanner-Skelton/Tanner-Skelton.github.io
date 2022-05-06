@@ -14,11 +14,11 @@ for($i=0; $i < $productCount; $i++ )
 {
     $row = mysqli_fetch_array($products, MYSQLI_ASSOC);
     $totalPrice += $row[price];
-    echo "<li class=collection-item>
-    <div class=card horizontal>";
+    echo "<li class=collection-item>";
+    echo "<div class=card-horizontal-small>";
     if(!is_null($row['imagePath']))
     {
-        echo "<div class=card-image1 style=width : 10%>";
+        echo "<div class=card-image";
         echo "<img src='../pictures/products/$row[imagePath]'/>";
         echo "</div>";
     }
@@ -36,7 +36,7 @@ for($i=0; $i < $productCount; $i++ )
     </li>";
 }
 echo "</ul>";
-echo "<div class=card horizontal>
+echo "<div class=card-horizontal-small>
   <div class=card-stacked>
   <div class=card-content>
     <p>Total Price:  ";
